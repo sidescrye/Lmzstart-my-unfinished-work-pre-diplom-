@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@1,600" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=K2D:wght@400" />
+
+    <meta charset="UTF-8" />
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+
+    <meta name="x-apple-disable-message-reformatting" />
+
+    <style>
+      .main-content-container {
+        box-sizing: border-box;
+        min-width: 1440px;
+        background: white;
+      }
+      .main-navigation-container1 {
+        box-sizing: border-box;
+        width: 100%;
+      }
+      .main-navigation-container4 {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        width: 100%;
+        background: url("assets/123.png") 50% / cover no-repeat;
+        border: none;
+      }
+      .main-navigation-container {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 8px;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-left: 14px;
+      }
+      .image-container-with-text {
+        box-sizing: border-box;
+        display: block;
+        width: 132px;
+        max-width: initial;
+        height: 145px;
+        border: none;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        object-fit: cover;
+      }
+      .main-navigation-container2 {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        min-width: 1085px;
+      }
+      .main-navigation-container3 {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        background: rgba(217, 217, 217, 0.5);
+        border-radius: 0px 0px 0px 16px;
+        backdrop-filter: blur(4px);
+      }
+      .header-nav-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+        justify-content: space-between;
+        height: 33px;
+        padding-right: 3px;
+        padding-left: 12px;
+        background: rgba(217, 217, 217, 0.5);
+        border-radius: 0px 0px 0px 16px;
+        backdrop-filter: blur(4px);
+      }
+      .primary-navigation-item {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 400 12px Inter, sans-serif;
+        color: white;
+      }
+      .majestic-heading {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        max-width: 793px;
+        padding: 0;
+        margin: 0;
+        margin-top: -2px;
+        font: italic 600 96px "Instrument Sans", sans-serif;
+        color: #1204d2;
+        text-align: center;
+        -webkit-text-stroke-color: white;
+        -webkit-text-stroke-width: 2px;
+      }
+      .header-background-bar {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        align-self: flex-end;
+        width: 480px;
+        height: 24px;
+        margin-top: 70px;
+        background: #1204d2;
+      }
+      .start-technologies-section {
+        padding-right: 48px;
+        padding-left: 938px;
+        margin-top: -25.5px;
+      }
+      .image-container {
+        box-sizing: border-box;
+        display: block;
+        width: 97px;
+        max-width: initial;
+        height: 49px;
+      }
+      .production-facility-details {
+        box-sizing: border-box;
+        width: 100%;
+        padding-bottom: 501px;
+        margin-top: -23.5px;
+      }
+      .royal-blue-header {
+        box-sizing: border-box;
+        width: 1014px;
+        height: 24px;
+        background: #1204d2;
+      }
+      .industrial-process-description {
+        box-sizing: border-box;
+        max-width: 1440px;
+        padding-right: 26px;
+        padding-left: 26px;
+        margin-top: 17px;
+      }
+      .flex-container-with-text-aligned-left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding-right: 7px;
+        padding-left: 7px;
+      }
+      .start-logo-image {
+        box-sizing: border-box;
+        display: block;
+        width: 45px;
+        max-width: initial;
+        height: 43px;
+        border: none;
+        object-fit: cover;
+      }
+      .start-heading-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        margin-left: 11px;
+        font: 400 32px "Inria Serif", serif;
+        color: black;
+      }
+      .production-process-details-container {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 100px;
+      }
+      .metal-processing-description-text-style {
+        flex: 0 0 auto;
+        align-self: stretch;
+        padding: 0;
+        margin: 0;
+        font: 400 32px K2D, sans-serif;
+        color: black;
+        text-align: left;
+      }
+      .modern-heading-style {
+        font: 400 32px K2D, sans-serif;
+        text-align: left;
+      }
+      .vertical-spacer1 {
+        flex: 0 0 auto;
+        margin-top: 957px;
+      }
+      .image-container-outer {
+        box-sizing: border-box;
+        display: block;
+        width: 1076px;
+        max-width: initial;
+        height: 379px;
+        border: 2px solid #1204d2;
+        object-fit: cover;
+      }
+      .industrial-process-description1 {
+        flex: 0 0 auto;
+        align-self: stretch;
+        padding: 0;
+        margin: 0;
+        margin-top: 36px;
+        margin-right: 37px;
+        margin-left: 20px;
+        font: 400 32px K2D, sans-serif;
+        color: black;
+        text-align: left;
+      }
+      .vertical-spacing-container {
+        flex: 0 0 auto;
+        margin-top: 37px;
+      }
+      .image-container-full-width {
+        box-sizing: border-box;
+        display: block;
+        width: 1215px;
+        max-width: initial;
+        height: 303px;
+        border: 2px solid #1204d2;
+        object-fit: cover;
+      }
+      .vertical-spacing-container1 {
+        flex: 0 0 auto;
+        margin-top: 133px;
+      }
+      .image-container-fullwidth1 {
+        box-sizing: border-box;
+        display: block;
+        width: 1215px;
+        max-width: initial;
+        height: 427px;
+        border: 2px solid #1204d2;
+        object-fit: cover;
+      }
+      .vertical-spacing-container2 {
+        flex: 0 0 auto;
+        margin-top: 151px;
+      }
+      .image-container-fullwidth {
+        box-sizing: border-box;
+        display: block;
+        width: 1215px;
+        max-width: initial;
+        height: 284px;
+        border: 2px solid #1204d2;
+        object-fit: cover;
+      }
+      .vertical-spacer {
+        flex: 0 0 auto;
+        margin-top: 187px;
+      }
+      .hero-image-container {
+        box-sizing: border-box;
+        display: block;
+        width: 1215px;
+        max-width: initial;
+        height: 311px;
+        border: 2px solid #1204d2;
+        object-fit: cover;
+      }
+      .contact-info-section {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        width: 100%;
+        background: #909090;
+      }
+      .blue-border-divider {
+        flex: 0 0 auto;
+        border-top: 3px solid #1204d2;
+      }
+      .contact-info-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 17.5px;
+        padding-bottom: 12px;
+      }
+      .content-block {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 400 16px Inter, sans-serif;
+        color: white;
+      }
+      .link-underline-white {
+        font: 400 16px Inter, sans-serif;
+        color: white;
+        text-decoration-line: underline;
+      }
+      .privacy-policy-link {
+        display: block;
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        margin-top: 6px;
+        font: 400 16px Inter, sans-serif;
+        color: white;
+        text-decoration-line: underline;
+      }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div style="display: inline-block; width: 1440px" data-ignore="used only for top most containter width">
+      <div class="main-content-container">
+        <div class="main-navigation-container1">
+          <div class="main-navigation-container1">
+            <div class="main-navigation-container4">
+              <div class="main-navigation-container">
+                <img src="assets/333.png" class="image-container-with-text" />
+                <div class="main-navigation-container2">
+                  <div class="main-navigation-container3">
+                    <div class="header-nav-container">
+                      <p class="primary-navigation-item">ГЛАВНАЯ</p>
+                      <p class="primary-navigation-item">ТЕХНОЛОГИИ</p>
+                      <p class="primary-navigation-item">СМК</p>
+                      <p class="primary-navigation-item">ПРОДУКЦИЯ</p>
+                      <p class="primary-navigation-item">О ПРЕДПРИЯТИИ</p>
+                      <p class="primary-navigation-item">УСЛУГИ</p>
+                      <p class="primary-navigation-item">ЗАКАЗЫ</p>
+                      <p class="primary-navigation-item">ЗАКУПКИ</p>
+                      <p class="primary-navigation-item">КОНТАКТЫ</p>
+                      <p class="primary-navigation-item">ВАКАНСИИ</p>
+                    </div>
+                  </div>
+                  <p class="majestic-heading">СТАРТ ТЕХНОЛОГИИ</p>
+                </div>
+              </div>
+              <div class="header-background-bar"></div>
+            </div>
+            <div class="start-technologies-section">
+              <img src="assets/image_2c510a48.png" class="image-container" />
+            </div>
+          </div>
+          <div class="production-facility-details">
+            <div class="royal-blue-header"></div>
+            <div class="industrial-process-description">
+              <div class="flex-container-with-text-aligned-left">
+                <img src="assets/image_46a4fcdd.png" class="start-logo-image" />
+                <p class="start-heading-style">ЛМЗ «СТАРТ»</p>
+              </div>
+              <div class="production-process-details-container">
+                <p class="metal-processing-description-text-style"><span>&nbsp;&nbsp;&nbsp; </span><span class="modern-heading-style">—</span><span>&nbsp; В работе находится  4 машины литья цветных металлов под давлением с системой автоматического контроля режимов литья «ТЕБОВА НУР» весом заготовки до 2 кг., объем переработки металла от 25 до 35 тонн в месяц. Ведется подготовка производства и отработка технологии литья металлов в кокиль.</span></p>
+                <div class="vertical-spacer1">
+                  <img src="assets/image_f5e68ca2.jpeg" class="image-container-outer" />
+                </div>
+                <p class="industrial-process-description1"><span>&nbsp;&nbsp;&nbsp; </span><span class="modern-heading-style">—</span><span>&nbsp; Механическая обработка на современных четырех осевых фрезерных и токарных обрабатывающих центрах «MUGA», «FANUC», «AWEA» «LEADWELL» с нагрузкой на стол до 350 кг и наличием до 24 позиций для инструмента.</span></p>
+                <div class="vertical-spacing-container">
+                  <img src="assets/image_f26d58fb.jpeg" class="image-container-full-width" />
+                </div>
+                <div class="vertical-spacing-container1">
+                  <img src="assets/image_f992b167.jpeg" class="image-container-fullwidth1" />
+                </div>
+                <div class="vertical-spacing-container2">
+                  <img src="assets/image_5fed8a2b.jpeg" class="image-container-fullwidth" />
+                </div>
+                <div class="vertical-spacer">
+                  <img src="assets/image_2aa6aff7.jpeg" class="hero-image-container" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-info-section">
+          <div class="blue-border-divider"></div>
+          <div class="contact-info-container">
+            <p class="content-block"><span>Россия, г. Арзамас. Нижегородская обл., ул. Молокозаводская стр. 45А, тел.: +7 (83147) 6-04-96, факс: +7 (83147) 9-50-48, сайт: </span><a href="http://lmzstart.ru/" class="link-underline-white">lmzstart.ru</a><span> Е-mail:</span><a href="mailto:ooopustyn@mail.ru" class="link-underline-white"> ooopustyn@mail.ru</a></p>
+            <a href="http://lmzstart.ru/privacy-policy/" class="privacy-policy-link">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

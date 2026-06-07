@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400" />
+
+    <meta charset="UTF-8" />
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+
+    <meta name="x-apple-disable-message-reformatting" />
+
+    <style>
+      .dark-theme-container {
+        box-sizing: border-box;
+        min-width: 1440px;
+        background: #353535;
+      }
+      .main-content-container {
+        box-sizing: border-box;
+        width: 100%;
+      }
+      .flex-container-with-text-content {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+      }
+      .enterprise-info-container {
+        box-sizing: border-box;
+        flex: 0 0 538px;
+        padding-bottom: 8px;
+      }
+      .industrial-info-card {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 14px 13px 81px;
+        background: #d9d9d9;
+      }
+      .company-info-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .image-with-text-overlay {
+        box-sizing: border-box;
+        display: block;
+        width: 132px;
+        max-width: initial;
+        height: 145px;
+        border: none;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        object-fit: cover;
+      }
+      .industrial-title-text-style {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        max-width: 373px;
+        padding: 0;
+        padding-top: 6px;
+        margin: 0;
+        margin-left: 20px;
+        font: 400 32px "Inria Serif", serif;
+        color: black;
+        text-align: left;
+      }
+      .majestic-heading {
+        padding: 0;
+        margin: 0;
+        margin-top: 38px;
+        font: 400 128px "Inria Serif", serif;
+        color: black;
+      }
+      .vertical-menu-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 939px;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        margin-left: -37px;
+      }
+      .vertical-menu-container1 {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        background: rgba(217, 217, 217, 0.5);
+        border-radius: 0px 0px 0px 16px;
+        backdrop-filter: blur(4px);
+      }
+      .navbar-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+        justify-content: space-between;
+        height: 33px;
+        padding-right: 3px;
+        padding-left: 12px;
+        background: rgba(217, 217, 217, 0.5);
+        border-radius: 0px 0px 0px 16px;
+        backdrop-filter: blur(4px);
+      }
+      .primary-nav-item {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 400 12px Inter, sans-serif;
+        color: white;
+      }
+      .mission-statement-container1 {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-end;
+        margin-top: 56px;
+      }
+      .mission-statement-container {
+        box-sizing: border-box;
+        flex: 1 0 auto;
+        max-width: initial;
+        height: 191px;
+        padding: 22px 70px 75px;
+        margin-right: -74px;
+        background: url("assets/image_f9e2e5cb.png") 50% / cover no-repeat;
+        border: none;
+      }
+      .warning-text {
+        padding: 0;
+        margin: 0;
+        font: 400 128px Inter, sans-serif;
+        color: #ffff1f;
+      }
+      .mission-statement-container2 {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background: grey;
+      }
+      .mission-image {
+        box-sizing: border-box;
+        display: block;
+        width: 35px;
+        max-width: initial;
+        height: 33px;
+        border: none;
+        object-fit: cover;
+      }
+      .mission-statement-text-style1 {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        max-width: 819px;
+        padding: 0;
+        padding-bottom: 19px;
+        margin: 0;
+        margin-left: -31.5px;
+        font: 400 24px "Inria Serif", serif;
+        color: black;
+        text-align: left;
+      }
+      .mission-statement-text-style2 {
+        font: 400 24px "Inria Serif", serif;
+        text-align: left;
+      }
+      .mission-statement-text-style {
+        font: 400 24px "Inria Serif", serif;
+        color: inherit;
+        text-align: left;
+        text-decoration-line: underline;
+      }
+      .blue-header-bar {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        align-self: flex-end;
+        width: 480px;
+        height: 24px;
+        margin-top: 134px;
+        background: #1204d2;
+      }
+      .strategic-banner {
+        padding-right: 48px;
+        padding-left: 938px;
+        margin-top: -25.5px;
+      }
+      .image-container {
+        box-sizing: border-box;
+        display: block;
+        width: 97px;
+        max-width: initial;
+        height: 49px;
+      }
+      .dynamic-component-container {
+        box-sizing: border-box;
+        width: 100%;
+        padding-bottom: 11.5px;
+        margin-top: -23.5px;
+        background: white;
+      }
+      .royal-blue-header {
+        box-sizing: border-box;
+        width: 1014px;
+        height: 24px;
+        background: #1204d2;
+      }
+      .dynamic-component-container2 {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 1440px;
+        padding-right: 10px;
+        padding-left: 24px;
+        margin-top: 20px;
+      }
+      .dynamic-component-container1 {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+        align-self: stretch;
+        justify-content: flex-start;
+      }
+      .dynamic-image-container {
+        box-sizing: border-box;
+        display: block;
+        width: 45px;
+        max-width: initial;
+        height: 43px;
+        border: none;
+        object-fit: cover;
+      }
+      .dynamic-component-description {
+        flex: 0 1 auto;
+        padding-top: 3px;
+        padding-bottom: 59px;
+        margin-left: -1px;
+      }
+      .dynamic-heading {
+        padding: 0;
+        padding-right: 4px;
+        padding-left: 4px;
+        margin: 0;
+        font: 400 32px "Inria Serif", serif;
+        color: black;
+      }
+      .dynamic-content-block {
+        box-sizing: border-box;
+        width: 100%;
+        margin-top: 34px;
+      }
+      .dynamic-text-block {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        font: 400 32px "Inria Serif", serif;
+        color: black;
+        text-align: left;
+      }
+      .quality-management-description-text-style {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-top: 5.75px;
+        font: 400 32px "Inria Serif", serif;
+        color: black;
+        text-align: left;
+      }
+      .dynamic-image-container1 {
+        box-sizing: border-box;
+        display: block;
+        width: 327px;
+        max-width: initial;
+        height: 454px;
+        margin-left: 3px;
+        border: none;
+        object-fit: cover;
+      }
+      .quality-assurance-text {
+        flex: 0 0 auto;
+        align-self: stretch;
+        padding: 0;
+        margin: 0;
+        margin-top: -38px;
+        margin-right: 33px;
+        margin-left: 37px;
+        font: 400 32px "Inria Serif", serif;
+        color: black;
+        text-align: left;
+      }
+      .contact-info-container1 {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        width: 100%;
+        background: #909090;
+      }
+      .header-divider {
+        flex: 0 0 auto;
+        border-top: 3px solid #1204d2;
+      }
+      .contact-info-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 17.5px;
+        padding-bottom: 12px;
+      }
+      .contact-info-section {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 400 16px Inter, sans-serif;
+        color: white;
+      }
+      .contact-info-link {
+        font: 400 16px Inter, sans-serif;
+        color: white;
+        text-decoration-line: underline;
+      }
+      .privacy-policy-link {
+        display: block;
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        margin-top: 6px;
+        font: 400 16px Inter, sans-serif;
+        color: white;
+        text-decoration-line: underline;
+      }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div style="display: inline-block; width: 1440px" data-ignore="used only for top most containter width">
+      <div class="dark-theme-container">
+        <div class="main-content-container">
+          <div class="main-content-container">
+            <div class="flex-container-with-text-content">
+              <div class="enterprise-info-container">
+                <div class="industrial-info-card">
+                  <div class="company-info-container">
+                    <img src="assets/333.png" class="image-with-text-overlay" />
+                    <p class="industrial-title-text-style">Арзамасский литейно-механический завод «СТАРТ»</p>
+                  </div>
+                  <p class="majestic-heading">СМК</p>
+                </div>
+              </div>
+              <div class="vertical-menu-container">
+                <div class="vertical-menu-container1">
+                  <div class="navbar-container">
+                    <p class="primary-nav-item">ГЛАВНАЯ</p>
+                    <p class="primary-nav-item">ТЕХНОЛОГИИ</p>
+                    <p class="primary-nav-item">СМК</p>
+                    <p class="primary-nav-item">ПРОДУКЦИЯ</p>
+                    <p class="primary-nav-item">О ПРЕДПРИЯТИИ</p>
+                    <p class="primary-nav-item">УСЛУГИ</p>
+                    <p class="primary-nav-item">ЗАКАЗЫ</p>
+                    <p class="primary-nav-item">ЗАКУПКИ</p>
+                    <p class="primary-nav-item">КОНТАКТЫ</p>
+                    <p class="primary-nav-item">ВАКАНСИИ</p>
+                  </div>
+                </div>
+                <div class="mission-statement-container1">
+                  <div class="mission-statement-container">
+                    <p class="warning-text">!</p>
+                  </div>
+                  <div class="mission-statement-container2">
+                    <img src="assets/image_46a4fcdd.png" class="mission-image" />
+                    <p class="mission-statement-text-style1"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="mission-statement-text-style2">Миссия предприятия, а также стратегические цели, задачи, обязательства высшего руководства с области качества отражены в «</span><a href="http://lmzstart.ru/wp-content/uploads/2020/02/%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0-%D0%B2-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8-%D0%BA%D0%B0%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B0-%D0%BD%D0%B0-2020%D0%B3%D0%BE%D0%B4-scaled.jpg" class="mission-statement-text-style">Политике в области безопасности и качества выпускаемой продукции»</a><span class="mission-statement-text-style2">.</span></p>
+                  </div>
+                </div>
+                <div class="blue-header-bar"></div>
+              </div>
+            </div>
+            <div class="strategic-banner">
+              <img src="assets/image_2c510a48.png" class="image-container" />
+            </div>
+          </div>
+          <div class="dynamic-component-container">
+            <div class="royal-blue-header"></div>
+            <div class="dynamic-component-container2">
+              <div class="dynamic-component-container1">
+                <img src="assets/image_46a4fcdd.png" class="dynamic-image-container" />
+                <div class="dynamic-component-description">
+                  <p class="dynamic-heading">ЛМЗ «СТАРТ»</p>
+                  <div class="dynamic-content-block">
+                    <p class="dynamic-text-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ООО «ЛМЗ «Старт» является динамично развивающимся предприятием на российском рынке автомобильных компонентов.</p>
+                    <p class="quality-management-description-text-style">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; На предприятии внедрена система менеджмента качества, построенная на требованиях международного стандарта ИСО 9001-2015. В настоящее время осуществляется подготовка к сертификации на соответствие стандарта системы менеджмента качества автомобильной промышленности IATF 16949:2016.</p>
+                  </div>
+                </div>
+                <img src="assets/image_a130a1e3.jpeg" class="dynamic-image-container1" />
+              </div>
+              <p class="quality-assurance-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Первоочередная роль на предприятии отводится <br />обеспечению качества выпускаемой продукции.<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Изначально качество закладывается при разработке и проектировании продукции и технологических процессов. Для этого используются <br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; — структурирование функций качества (QFD),<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; — методы анализа видов и последствий потенциальных несоответствий (DFMEA, PFMEA), <br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; — методы компьютерного моделирования, <br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; — планирование экспериментов,<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; — изготовление макетных и опытных образцов.<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; В процессе производства качество продукции обеспечивается за счет использования прогрессивного высокоточного оборудования, современных технологий. <br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Особое внимание уделено управлению технологическими процессами, что позволяет оперативно выявлять отклонения в процессе производства и не допускать несоответствующую продукцию в дальнейшее производство. Для этого используются следующие методики:<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; — периодический операционный контроль,<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; — статистическое управление процессами (SPC),<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; — расчет индексов возможностей (Cp, Cpk, Pp, Ppk).<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Качество готовой продукции обеспечивается путем проведения приемо-сдаточных испытаний, 100%-м выходным контролем.</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-info-container1">
+          <div class="header-divider"></div>
+          <div class="contact-info-container">
+            <p class="contact-info-section"><span>Россия, г. Арзамас. Нижегородская обл., ул. Молокозаводская стр. 45А, тел.: +7 (83147) 6-04-96, факс: +7 (83147) 9-50-48, сайт: </span><a href="http://lmzstart.ru/" class="contact-info-link">lmzstart.ru</a><span> Е-mail:</span><a href="mailto:ooopustyn@mail.ru" class="contact-info-link"> ooopustyn@mail.ru</a></p>
+            <a href="http://lmzstart.ru/privacy-policy/" class="privacy-policy-link">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

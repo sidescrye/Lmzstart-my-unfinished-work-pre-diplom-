@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=K2D:wght@400" />
+
+    <meta charset="UTF-8" />
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+
+    <meta name="x-apple-disable-message-reformatting" />
+
+    <style>
+      .industrial-plant-layout {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        max-width: 1440px;
+        background: white;
+      }
+      .industrial-info-container1 {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+      }
+      .industrial-plant-section {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        align-self: stretch;
+        justify-content: flex-start;
+        max-width: initial;
+        height: 535px;
+        background: url("assets/123.png") 50% / cover no-repeat;
+        border: none;
+      }
+      .industrial-facility-info {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-right: 11px;
+        padding-left: 11px;
+      }
+      .industrial-plant-card {
+        box-sizing: border-box;
+        flex: 0 1 600px;
+        padding-top: 12px;
+      }
+      .industrial-info-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .industrial-logo-container {
+        box-sizing: border-box;
+        display: block;
+        width: 132px;
+        max-width: initial;
+        height: 145px;
+        border: none;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        object-fit: cover;
+      }
+      .industrial-title-text-style {
+        box-sizing: border-box;
+        flex: 0 1 auto;
+        max-width: 373px;
+        padding: 0;
+        margin: 0;
+        margin-left: 17px;
+        font: 400 32px "Inria Serif", serif;
+        color: white;
+        text-align: left;
+      }
+      .start-title-style {
+        font: 400 32px "Inria Serif", serif;
+        text-align: left;
+      }
+      .industrial-text-block {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-top: 31px;
+        font: 400 20px "Instrument Sans", sans-serif;
+        color: white;
+        text-align: left;
+      }
+      .navigation-menu-container {
+        box-sizing: border-box;
+        flex: 0 0 818px;
+        align-self: center;
+        padding-bottom: 347px;
+        margin-left: 11px;
+      }
+      .header-nav-container {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 33px;
+        padding-right: 3px;
+        padding-left: 12px;
+        background: rgba(217, 217, 217, 0.5);
+        border-radius: 0px 0px 0px 16px;
+        backdrop-filter: blur(4px);
+      }
+      .primary-navigation-item {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 400 12px Inter, sans-serif;
+        color: white;
+      }
+      .production-details-section {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        margin-top: 92px;
+      }
+      .main-content-section {
+        flex: 0 0 auto;
+        padding-right: 11px;
+        padding-left: 11px;
+      }
+      .main-activity-description {
+        box-sizing: border-box;
+        max-width: 995px;
+        padding: 0;
+        margin: 0;
+        font: 400 16px Inter, sans-serif;
+        color: white;
+        text-align: left;
+      }
+      .blue-highlight-bar {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        align-self: flex-end;
+        width: 479px;
+        height: 24px;
+        margin-top: -22.5px;
+        background: #1204d2;
+      }
+      .nested-media-container {
+        flex: 0 0 auto;
+        margin-top: -24px;
+      }
+      .horizontal-layout-container {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        padding-right: 48px;
+        padding-left: 940px;
+      }
+      .image-container1 {
+        box-sizing: border-box;
+        display: block;
+        width: 45px;
+        max-width: initial;
+        height: 45px;
+      }
+      .image-wrapper {
+        box-sizing: border-box;
+        display: block;
+        width: 45px;
+        max-width: initial;
+        height: 45px;
+        margin-left: 5px;
+      }
+      .blue-header-bar {
+        box-sizing: border-box;
+        width: 1014px;
+        height: 24px;
+        margin-top: -24px;
+        background: #1204d2;
+      }
+      .header-separator {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        width: 465px;
+        height: 30px;
+        margin-top: -25px;
+        background: white;
+      }
+      .industrial-factory-details {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        padding-top: 7px;
+        padding-bottom: 21px;
+        padding-left: 36px;
+        margin-top: -5px;
+      }
+      .industrial-info-container2 {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .industrial-info-section {
+        flex: 1 0 auto;
+      }
+      .industrial-info-container3 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .start-logo-icon {
+        box-sizing: border-box;
+        display: block;
+        width: 45px;
+        max-width: initial;
+        height: 43px;
+        border: none;
+        object-fit: cover;
+      }
+      .start-heading-text-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        margin-left: 11px;
+        font: 400 32px "Inria Serif", serif;
+        color: black;
+      }
+      .modern-equipment-description {
+        padding-right: 4px;
+        padding-left: 4px;
+        margin-top: 12px;
+      }
+      .modern-equipment-description1 {
+        box-sizing: border-box;
+        max-width: 1084px;
+        padding: 0;
+        margin: 0;
+        font: 400 24px K2D, sans-serif;
+        color: black;
+        text-align: left;
+      }
+      .nested-content-container {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        padding-top: 8px;
+        margin-left: 32px;
+      }
+      .image-container-with-border {
+        box-sizing: border-box;
+        display: block;
+        flex: 0 0 auto;
+        max-width: initial;
+        height: 176px;
+        margin-right: 6px;
+        margin-left: 11px;
+        border: 2px solid #1204d2;
+        object-fit: cover;
+      }
+      .vertical-spacer {
+        flex: 0 0 auto;
+        margin-top: 39px;
+      }
+      .image-container {
+        box-sizing: border-box;
+        display: block;
+        width: 284px;
+        max-width: initial;
+        height: 177px;
+        border: none;
+        object-fit: cover;
+      }
+      .job-perks-section4 {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-right: 5px;
+        padding-left: 5px;
+        margin-top: 12px;
+      }
+      .job-perks-section3 {
+        box-sizing: border-box;
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding-right: 20.5px;
+        padding-left: 20.5px;
+        background: #1204d2;
+        border-radius: 12px;
+      }
+      .big-exclamation-text-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 400 128px Inter, sans-serif;
+        color: white;
+      }
+      .job-perks-section2 {
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 17.5px;
+      }
+      .vertical-divider {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        width: 2px;
+        height: 168px;
+        border-left: 1px solid white;
+      }
+      .job-card-container1 {
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: column;
+        gap: 13px;
+        align-items: stretch;
+        justify-content: center;
+        padding-top: 9.5px;
+        padding-bottom: 17.5px;
+        margin-left: 12.5px;
+      }
+      .job-perks-section1 {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: center;
+      }
+      .job-perks-section {
+        justify-content: flex-start;
+      }
+      .job-card-container {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .status-icon-text-display-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 400 32px Inter, sans-serif;
+        color: white;
+        white-space: pre-wrap;
+      }
+      .job-perks-description-text-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        margin-left: 11px;
+        font: 400 32px Inter, sans-serif;
+        color: white;
+        white-space: pre-wrap;
+      }
+      .compensation-benefits-text-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        margin-left: 12px;
+        font: 400 32px Inter, sans-serif;
+        color: white;
+        white-space: pre-wrap;
+      }
+      .job-perks-section1:last-child {
+        gap: 8px;
+        justify-content: space-between;
+      }
+      .digital-dial-text-style {
+        flex: 0 0 auto;
+        padding: 0;
+        padding-top: 61px;
+        margin: 0;
+        margin-left: 132px;
+        font: 400 12px Inter, sans-serif;
+        color: black;
+      }
+      .contact-info-container1 {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        background: #909090;
+      }
+      .border-divider-flex-shrink-styles {
+        flex: 0 0 auto;
+        border-top: 3px solid #1204d2;
+      }
+      .contact-info-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 17.5px;
+        padding-bottom: 24px;
+      }
+      .content-block {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 400 16px Inter, sans-serif;
+        color: white;
+      }
+      .contact-info-link {
+        font: 400 16px Inter, sans-serif;
+        color: white;
+        text-decoration-line: underline;
+      }
+      .privacy-policy-link {
+        display: block;
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        margin-top: 6px;
+        font: 400 16px Inter, sans-serif;
+        color: white;
+        text-decoration-line: underline;
+      }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div style="display: inline-block; width: 1440px" data-ignore="used only for top most containter width">
+      <div class="industrial-plant-layout">
+        <div class="industrial-info-container1">
+          <div class="industrial-plant-section">
+            <div class="industrial-facility-info">
+              <div class="industrial-plant-card">
+                <div class="industrial-info-container">
+                  <img src="assets/333.png" class="industrial-logo-container" />
+                  <p class="industrial-title-text-style"><span>Арзамасский литейно-механический завод </span><span class="start-title-style">«</span><span>СТАРТ</span><span class="start-title-style">»</span></p>
+                </div>
+                <p class="industrial-text-block">&nbsp;&nbsp; ООО «Арзамасский литейно-механический завод «Старт», правопреемник ООО  «Пустынь», основано в 1991г. Это современное промышленное предприятие, занимающееся литьём цветных металлов под давлением (латунь, цинк, алюминий, бронза), освоением литья металлов в кокиль, литьём пластмасс, мехообработкой, сборкой и поставкой на конвейеры заводов автопрома и других ведущих предприятий России. </p>
+              </div>
+              <div class="navigation-menu-container">
+                <div class="header-nav-container">
+                  <p class="primary-navigation-item">ГЛАВНАЯ</p>
+                  <p class="primary-navigation-item">ТЕХНОЛОГИИ</p>
+                  <p class="primary-navigation-item">СМК</p>
+                  <p class="primary-navigation-item">ПРОДУКЦИЯ</p>
+                  <p class="primary-navigation-item">О ПРЕДПРИЯТИИ</p>
+                  <p class="primary-navigation-item">УСЛУГИ</p>
+                  <p class="primary-navigation-item">ЗАКАЗЫ</p>
+                  <p class="primary-navigation-item">ЗАКУПКИ</p>
+                  <p class="primary-navigation-item">КОНТАКТЫ</p>
+                  <p class="primary-navigation-item">ВАКАНСИИ</p>
+                </div>
+              </div>
+            </div>
+            <div class="production-details-section">
+              <div class="main-content-section">
+                <p class="main-activity-description">Основное направление деятельности - производство полного цикла изготовления деталей и узлов для ведущих предприятий автопрома и нефтегазовой отрасли России.</p>
+              </div>
+              <div class="blue-highlight-bar"></div>
+              <div class="nested-media-container">
+                <div class="horizontal-layout-container">
+                  <img src="assets/image_409fd06.png" class="image-container1" />
+                  <img src="assets/image_409fd06.png" class="image-wrapper" />
+                </div>
+                <div class="blue-header-bar"></div>
+              </div>
+            </div>
+          </div>
+          <div class="header-separator"></div>
+        </div>
+        <div class="industrial-factory-details">
+          <div class="industrial-info-container2">
+            <div class="industrial-info-section">
+              <div class="industrial-info-container3">
+                <img src="assets/image_46a4fcdd.png" class="start-logo-icon" />
+                <p class="start-heading-text-style">ЛМЗ «СТАРТ»</p>
+              </div>
+              <div class="modern-equipment-description">
+                <p class="modern-equipment-description1">         Предприятие оснащено современным оборудованием (более 150 единиц), в том числе: обрабатывающие центры с ЧПУ типа MUGA R450, FANUC Series, AWEA AV610, Токарно-фрезерные центры с ЧПУ Gildemeister TWIN42 и MYLAS DT52, токарные станки с ЧПУ типа САК-6136 и ТК-36, ТВ320, 1А616, машины для литья цветных металлов под давлением типа TST 250 и 711А08, термопластавтоматы «Демаг 100, 160 и 240», комплекс вакуумной пропитки деталей весом до 2 кг.<br /><br />       Коллективом предприятия внедрена международная система менеджмента качества, соответствующая требованиям ISO 9001:2015, позволяющая выпускать продукцию для основных автосборочных предприятий России и представительств зарубежных заводов в России. В настоящее время на заводе ведётся работа по сертификации системы менеджмента качества на соответствие требованиям IATF 16949.</p>
+              </div>
+            </div>
+            <div class="nested-content-container">
+              <img src="assets/image_ace77374.png" class="image-container-with-border" />
+              <div class="vertical-spacer">
+                <img src="assets/image_d7de9b2.png" class="image-container" />
+              </div>
+            </div>
+          </div>
+          <div class="job-perks-section4">
+            <div class="job-perks-section3">
+              <p class="big-exclamation-text-style">!</p>
+              <div class="job-perks-section2">
+                <div class="vertical-divider"></div>
+                <div class="job-card-container1">
+                  <!-- Repeated elements detected. These are rendered using loops & conditions in the React tab -->
+                  <div class="job-perks-section1 job-perks-section">
+                    <div class="job-card-container" style="width: 50.2%; box-sizing: border-box">
+                      <p class="status-icon-text-display-style">✓</p>
+                      <p class="job-perks-description-text-style">Достойная заработная плата</p>
+                    </div>
+                    <div class="job-card-container" style="padding-left: 15px; padding-right: 15px; width: 49.8%; box-sizing: border-box">
+                      <p class="status-icon-text-display-style">✓</p>
+                      <p class="compensation-benefits-text-style">Компенсация питания</p>
+                    </div>
+                  </div>
+                  <div class="job-perks-section1 job-perks-section">
+                    <div class="job-card-container" style="width: 50.2%; box-sizing: border-box">
+                      <p class="status-icon-text-display-style">✓</p>
+                      <p class="job-perks-description-text-style">Трудоустройство по ТК РФ</p>
+                    </div>
+                    <div class="job-card-container" style="padding-left: 15px; padding-right: 15px; width: 49.8%; box-sizing: border-box">
+                      <p class="status-icon-text-display-style">✓</p>
+                      <p class="compensation-benefits-text-style">Стимулирующие премии</p>
+                    </div>
+                  </div>
+                  <div class="job-perks-section1 job-perks-section job-perks-section1:last-child">
+                    <div class="job-card-container">
+                      <p class="status-icon-text-display-style">✓</p>
+                      <p class="job-perks-description-text-style">Полный социальный пакет</p>
+                    </div>
+                    <div class="job-card-container">
+                      <p class="status-icon-text-display-style">✓</p>
+                      <p class="compensation-benefits-text-style">Обучение на рабочем месте</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="digital-dial-text-style">(циферблат)</p>
+          </div>
+        </div>
+        <div class="contact-info-container1">
+          <div class="border-divider-flex-shrink-styles"></div>
+          <div class="contact-info-container">
+            <p class="content-block"><span>Россия, г. Арзамас. Нижегородская обл., ул. Молокозаводская стр. 45А, тел.: +7 (83147) 6-04-96, факс: +7 (83147) 9-50-48, сайт: </span><a href="http://lmzstart.ru/" class="contact-info-link">lmzstart.ru</a><span> Е-mail:</span><a href="mailto:ooopustyn@mail.ru" class="contact-info-link"> ooopustyn@mail.ru</a></p>
+            <a href="http://lmzstart.ru/privacy-policy/" class="privacy-policy-link">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
